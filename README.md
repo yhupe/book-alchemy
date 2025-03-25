@@ -32,12 +32,15 @@ Further, open http://127.0.0.1:5000 in your terminal and you'll be guided to the
 
 http://127.0.0.1:5000/add_author will lead you to the html form to add an author - Name and Date of Birth are required. __You have to add an author first before you continue to add a book title!__. 
 
-http://127.0.0.1:5000/add_books leads you to another form where you can add the acutal book - all fields are required.   
+http://127.0.0.1:5000/add_books leads you to another form where you can add the acutal book - all fields are required but the ISBN number goes better without ' - '.
   
 The delete button under each book record is self-explanatory but there is one speciality: once you have deleted all books linked to an author, the author will be deleted from the database table 'authors' as well.  
+  
+The functions to search for key words and sort the book records also is directly located at the beginning of the page.
 
 To get back to the landing page, refer to http://127.0.0.1:5000 again since I haven't had the time yet to expand any further. 
-
+  
+Notice how the book title cover images are loaded directly into the html template via Jinja2, based on the ISBN number ( without ' - ') you have submitted earlier 😏.
 ## Other things
 
 Tried my web application? I'd love to hear your feedback!  
