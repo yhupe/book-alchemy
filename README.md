@@ -28,7 +28,15 @@ Then, run the web application __app.py__ on port:5000:
 ```python
 python app.py
 ```
+Further, open http://127.0.0.1:5000 in your terminal and you'll be guided to the landing page where you will be able to see all book records added so far.  
 
+http://127.0.0.1:5000/add_author will lead you to the html form to add an author - Name and Date of Birth are required. __You have to add an author first before you continue to add a book title!__. 
+
+http://127.0.0.1:5000/add_books leads you to another form where you can add the acutal book - all fields are required.   
+  
+The delete button under each book record is self-explanatory but there is one speciality: once you have deleted all books linked to an author, the author will be deleted from the database table 'authors' as well.  
+
+To get back to the landing page, refer to http://127.0.0.1:5000 again since I haven't had the time yet to expand any further. 
 
 ## Other things
 
